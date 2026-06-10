@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Sports Desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LIVE SCOREBOARD TICKER -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="game"><span class="live-dot">● NBA FINALS</span> SPURS 115 - KNICKS 111 <span class="final-tag">(Final - G3)</span></div>
+            <div class="game"><span class="live-dot">● NHL FINALS</span> HURRICANES 3 - GOLDEN KNIGHTS 2 <span class="final-tag">(Final - G2)</span></div>
+            <div class="game"><span class="countdown-tag">2 DAYS TO GO</span> 2026 WORLD CUP KICKOFF</div>
+        </div>
+    </div>
+
+    <!-- 2. APEX BRAND HEADER -->
+    <header class="main-header">
+        <h1>APEX SPORTS DESK</h1>
+        <p>Real-Time Broadcast Data & Historical Archives</p>
+    </header>
+
+    <!-- 3. MAIN APP GRID -->
+    <div class="container">
+        
+        <!-- LEFT COLUMN: BREAKING HEADLINES -->
+        <main class="news-feed">
+            <h2>📰 Top Stories Today</h2>
+            
+            <div class="story-card">
+                <div class="story-banner nba-theme">🏀 NBA FINALS INTERCEPT</div>
+                <div class="story-body">
+                    <h3>Wembanyama Stuns Knicks at MSG to Revive Spurs</h3>
+                    <p>Victor Wembanyama carried San Antonio to a thrilling 115-111 victory over the New York Knicks at Madison Square Garden. The monumental performance cuts the Knicks' series lead to 2-1 and brings massive momentum back to the Spurs squad.</p>
+                </div>
+            </div>
+
+            <div class="story-card">
+                <div class="story-banner ncaa-theme">🏈 COLLEGE FOOTBALL EMERGENCY UPDATE</div>
+                <div class="story-body">
+                    <h3>Judge Overrules NCAA: Brendan Sorsby Declared Eligible</h3>
+                    <p>A Texas judge has granted a temporary injunction allowing star Texas Tech quarterback Brendan Sorsby to play the college football season. The ruling halts an NCAA gambling suspension, sending shockwaves through college sports brass.</p>
+                </div>
+            </div>
+
+            <div class="story-card">
+                <div class="story-banner world-cup-theme">⚽ GLOBAL EVENT COUNTDOWN</div>
+                <div class="story-body">
+                    <h3>The 48-Team World Cup is Nearly Upon Us</h3>
+                    <p>With only two days remaining until kickoff, all 16 host cities are ready for the largest World Cup tournament in history. Media coverage is officially launching daily video hubs and podcast loops worldwide.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- RIGHT COLUMN: INTERACTIVE ENGINE SEARCH -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3>🔍 Search Player Metric Files</h3>
+                <p class="help-text">Type a featured name to unpack historical baseline data profiles instantly.</p>
+                
+                <div class="search-input-group">
+                    <input type="text" id="dbSearch" placeholder="Type Wembanyama, Sorsby, or Jordan...">
+                    <button onclick="runArchiveSearch()">Search System</button>
+                </div>
+
+                <!-- Injection Results Nodes -->
+                <div id="searchSuccess" class="result-display-panel">
+                    <h4 id="resName">--</h4>
+                    <p><b>Division Type:</b> <span id="resLeague">--</span></p>
+                    <p><b>Archived Status:</b> <span id="resStatus">--</span></p>
+                    <p style="margin-top: 10px; font-weight: bold;">Current Play Log Entry:</p>
+                    <p id="resLog" class="log-quote-box">--</p>
+                </div>
+                <div id="searchError" class="error-display-panel">❌ No match inside active data strings. Try searching for 'Wembanyama'.</div>
+            </div>
+
+            <div class="sidebar-card info-widget">
+                <h3>⚡ Active System Nodes</h3>
+                <p><b>Feed Sync:</b> Automated Local Buffer</p>
+                <p><b>Database Tier:</b> GitHub Pages Production</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; Apex Sports Desk. Sourced responsibly from verified global newsfeeds.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
