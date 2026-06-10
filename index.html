@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex NBA Courtside</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LIVE NBA FINALS SCOREBOARD TICKER -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="game"><span class="live-dot">● NBA FINALS</span> SPURS 115 - KNICKS 111 <span class="final-tag">(Final - Game 3)</span></div>
+            <div class="game"><b>SERIES STATUS:</b> Knicks Lead 2-1</div>
+            <div class="game"><span class="next-tag">NEXT GAME</span> Thursday Night @ MSG</div>
+        </div>
+    </div>
+
+    <!-- 2. NBA BRAND HEADER -->
+    <header class="main-header">
+        <h1>APEX NBA COURTSIDE</h1>
+        <p>Your Ultimate Hub for NBA Finals Coverage and Player History Profiles</p>
+    </header>
+
+    <!-- 3. MAIN APP GRID -->
+    <div class="container">
+        
+        <!-- LEFT COLUMN: BREAKING NBA HEADLINES -->
+        <main class="news-feed">
+            <h2>📰 Featured Finals Headlines</h2>
+            
+            <div class="story-card">
+                <div class="story-banner spurs-theme">🏀 SPURS BOUNCE BACK</div>
+                <div class="story-body">
+                    <h3>Wembanyama Dominates MSG to Secure Game 3 Victory</h3>
+                    <p>Victor Wembanyama put on a defensive masterclass at Madison Square Garden, carrying the San Antonio Cruz to a vital 115-111 win. Despite a furious fourth-quarter push by the New York Knicks, Wembanyama's rim protection locked down the paint and stopped a 3-0 series deficit.</p>
+                </div>
+            </div>
+
+            <div class="story-card">
+                <div class="story-banner knicks-theme">🏀 NEW YORK ANALYSIS</div>
+                <div class="story-body">
+                    <h3>Brunson Rallies Knicks Late But Falls Just Short</h3>
+                    <p>Jalen Brunson spearheaded a massive late-game run for New York, dropping tough buckets in traffic against the length of San Antonio. Ultimately, the Knicks ran out of time, but the team remains highly confident holding a 2-1 lead as they stay home for Game 4.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- RIGHT COLUMN: INTERACTIVE NBA ENGINE SEARCH -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3>🔍 Search NBA Player Archives</h3>
+                <p class="help-text">Type a star player's name to unlock their biographical profile and historic play logs.</p>
+                
+                <div class="search-input-group">
+                    <input type="text" id="dbSearch" placeholder="Type Wembanyama, Brunson, or Jordan...">
+                    <button onclick="runArchiveSearch()">Search Database</button>
+                </div>
+
+                <!-- Injection Results Nodes -->
+                <div id="searchSuccess" class="result-display-panel">
+                    <h4 id="resName">--</h4>
+                    <p><b>Team Affiliation:</b> <span id="resTeam">--</span></p>
+                    <p><b>Position / Role:</b> <span id="resPos">--</span></p>
+                    <p style="margin-top: 10px; font-weight: bold;">Documented Play-by-Play Log:</p>
+                    <p id="resLog" class="log-quote-box">--</p>
+                </div>
+                <div id="searchError" class="error-display-panel">❌ No record found in our active NBA vault. Try searching for 'Brunson' or 'Wembanyama'.</div>
+            </div>
+
+            <!-- TRENDING WIDGET -->
+            <div class="sidebar-card info-widget">
+                <h3>🏆 Finals MVP Odds Tracker</h3>
+                <p><b>Jalen Brunson:</b> +110 (Favored)</p>
+                <p><b>Victor Wembanyama:</b> +240</p>
+                <p><b>Karl-Anthony Towns:</b> +450</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; Apex NBA Courtside. Designed beautifully for NBA fans. Powered by GitHub.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
